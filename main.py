@@ -13,13 +13,13 @@ query_contact_text = "Введите сообщения для создател�
 bot = Client(
     api_id=2040,
     api_hash='b18441a1ff607e10a989891a5462e627',
-    bot_token='7092071196:AAFSauf87-U6KkyThD4jhvyYpv1yNVYEKQw',
-    name='mrleniks_bot'
+    bot_token='your bot token',
+    name='your bot id'
 
 )
 # FushionBrain
-API_KEY = "A95C7130AB56D0D9D469010E9C49F433"
-SECRET_KEY = "FBB07EC1D52819309848CE7C88D3D0CE"
+API_KEY = "your api key"
+SECRET_KEY = "your secret key"
 
 
 def button_filter(button):
@@ -226,4 +226,5 @@ async def Profile(bot, message):
     title = users[message.from_user.username]
     users = dict(sorted(users.items()))
     await bot.send_message(message.chat.id, f"Вы: Ваше имя:{user.first_name}(@{user.username}) Ваши очки в Камень-ножницы-бумага: {users[message.from_user.username]} Количество побед в квесте {quest_users[message.from_user.username]}", reply_markup=keyboards.kb_main)
+
 bot.run()
