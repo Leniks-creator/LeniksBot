@@ -31,5 +31,3 @@ Quests
 Generating images
 
 Developer contact
-
-Связь с разработчиком
